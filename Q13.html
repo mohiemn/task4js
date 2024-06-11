@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q13</title>
+</head>
+
+<body>
+    <h2>Q13</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        let sum = 0;
+        let j =0;
+        function summation(arr) {
+            for (let i =0;i<arr.length ;i++){
+                sum = sum + arr[i];
+            }
+            // while (j<arr.length){
+            //     sum = sum + arr[j];
+            //     j++;
+            // }
+            return sum;
+        }
+        document.getElementById("demo").innerHTML = "The summation of array : " + summation(arr);
+    </script>
+
+</body>
+
+</html>

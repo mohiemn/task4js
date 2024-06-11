@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q33</title>
+</head>
+<body>
+    <h2>Q33</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [
+            {
+                name: "Angelina Jolie",
+                age: 80
+            },
+            {
+                name: "Eric Jones",
+                age: 2
+            },
+            {
+                name: "Paris Hilton",
+                age: 5
+            },
+            {
+                name: "Kayne West",
+                age: 16
+            },
+            {
+                name: "Bob Ziroll",
+                age: 100
+            }
+        ];
+        function readyToPutInTheDOM(arr) {
+            return arr.map(ele => {
+                return "<h1>" + ele.name + "</h1>" +"<h2>" + ele.age + "</h2>"  
+            });
+        }
+        document.getElementById("demo").innerHTML = readyToPutInTheDOM(arr);
+    </script>
+
+</body>
+
+</html>

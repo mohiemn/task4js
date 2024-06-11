@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q36</title>
+</head>
+<body>
+    <h2>Q36</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia"}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele"}];
+        let key = 'name';
+        function extractFullName (arr ) {
+            return arr.map(ele => {
+                return ele.first + " " +ele.last ;
+                
+            });
+        }
+        document.getElementById("demo").innerHTML = extractFullName (arr);
+    </script>
+
+</body>
+
+</html>

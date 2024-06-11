@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q25</title>
+</head>
+
+<body>
+    <h2>Q25</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = ['colt','matt', 'tim', 'udemy'];
+        let newarr=[];
+
+        function showFirstAndLast  (arr) {
+            arr.forEach(element => {
+                    newarr.push (element[0] + element[element.length-1]);
+            });
+            return newarr;
+        }
+        document.getElementById("demo").innerHTML = "The showFirstAndLast of array : " + showFirstAndLast  (arr);
+    </script>
+
+</body>
+
+</html>

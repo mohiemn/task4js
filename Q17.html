@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q17</title>
+</head>
+
+<body>
+    <h2>Q17</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [1, 2, 3, 4, 5 , -1];
+        let sum = 0 ;
+        let j=0;
+        function aveArray(arr) {
+            for (let i =0;i<arr.length ;i++){
+                sum = sum + arr[i];
+            }
+            // while(j<arr.length){
+            //     sum = sum + arr[j];
+            // }
+            return sum/arr.length;
+        }
+        document.getElementById("demo").innerHTML = "The aveArray of array : " + aveArray(arr);
+    </script>
+
+</body>
+
+</html>

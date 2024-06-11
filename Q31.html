@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q31</title>
+</head>
+
+<body>
+    <h2>Q31</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [
+            {
+                name: "Angelina Jolie",
+                age: 80
+            },
+            {
+                name: "Eric Jones",
+                age: 2
+            },
+            {
+                name: "Paris Hilton",
+                age: 5
+            },
+            {
+                name: "Kayne West",
+                age: 16
+            },
+            {
+                name: "Bob Ziroll",
+                age: 100
+            }
+        ];
+        function namesOnly(arr) {
+            return arr.map(ele => ele.name);
+        }
+        document.getElementById("demo").innerHTML = "The namesOnly of array : " + namesOnly(arr);
+    </script>
+
+</body>
+
+</html>

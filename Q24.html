@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q24</title>
+</head>
+
+<body>
+    <h2>Q24</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [5, 2, 2, 1, 8, 66, 55, 77, 34, 9, 55, 1];
+        let newarr=[];
+        function onlyEvenValues (arr) {
+            arr.forEach(element => {
+                if (element %2==0){
+                    newarr.push (element); 
+                }
+                
+            });
+            return newarr;
+        }
+        document.getElementById("demo").innerHTML = "The onlyEvenValues  of array : " + onlyEvenValues (arr);
+    </script>
+
+</body>
+
+</html>

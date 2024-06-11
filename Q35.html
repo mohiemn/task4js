@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q35</title>
+</head>
+<body>
+    <h2>Q35</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}];
+        let key = 'name';
+        function readyToPutInTheDOM(arr , key) {
+            return arr.map(ele => {
+                return ele[key];
+                
+            });
+        }
+        document.getElementById("demo").innerHTML = readyToPutInTheDOM(arr , key);
+    </script>
+
+</body>
+
+</html>

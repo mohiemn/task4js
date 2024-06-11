@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q26</title>
+</head>
+
+<body>
+    <h2>Q26</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [{ name: 'Elie' }, { name: 'Tim' }, { name: 'Matt' }, { name: 'Colt' }];
+        let newarr = [];
+
+        function addKeyAndValue (arr , key , value) {
+            arr.forEach(obj => {
+                obj[key] = value;
+            });
+            return arr;
+        }
+        document.getElementById("demo").innerHTML = "The addKeyAndValue  of array : " + addKeyAndValue (arr , 'title' , 'instructor');
+    </script>
+
+</body>
+
+</html>

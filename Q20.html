@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q19</title>
+</head>
+
+<body>
+    <h2>Q19</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = ["alex","mercer","madrasa","rashed2","emad","hala"];
+        let char = "a";
+        let j=0;
+        let count =0;
+        function evenIndexOddLength(arr ) {
+            for (let i =0;i<arr.length ;i++){
+                if ( arr[i].length %2!=0 && i%2==0){
+                    return arr[i];
+                }
+            }
+            // while(j<arr.length){
+            //     if ( arr[j].length %2!=0 && j%2==0){
+            //         return arr[j];
+            //     }
+            // }
+        }
+        document.getElementById("demo").innerHTML = "The evenIndexOddLength of array : " + evenIndexOddLength(arr );
+    </script>
+
+</body>
+
+</html>

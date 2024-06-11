@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q21</title>
+</head>
+
+<body>
+    <h2>Q21</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [44, 5, 4, 3, 2, 10];
+        let newarr=[];
+        let j=0;
+        function powerElementIndex(arr ) {
+            for (let i =0;i<arr.length ;i++){
+                    newarr[i] =Math.pow(arr[i],i) ;
+            }
+            // while(j<arr.length){
+            //     newarr[j] =Math.pow(arr[j],j) ;
+            // }
+            return newarr;
+        }
+        document.getElementById("demo").innerHTML = "The powerElementIndex of array : " + powerElementIndex(arr );
+    </script>
+
+</body>
+
+</html>

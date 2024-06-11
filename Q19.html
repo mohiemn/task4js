@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q19</title>
+</head>
+
+<body>
+    <h2>Q19</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = "alex mercer madrasa rashed2 emad hala";
+        let char = "a";
+        let j=0;
+        let count =0;
+        function repeatChar(arr , char ) {
+            for (let i =0;i<arr.length ;i++){
+                if ( arr[i] === char){
+                    count++;
+                }
+            }
+            // while(j<arr.length){
+            //     if ( arr[j] === char){
+            //         count++;
+            //     }
+            // }
+            return count;
+        }
+        document.getElementById("demo").innerHTML = "The repeatChar of array : " + repeatChar(arr , char);
+    </script>
+
+</body>
+
+</html>

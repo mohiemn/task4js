@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q23</title>
+</head>
+
+<body>
+    <h2>Q23</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [5, 2, 2, 1, 8, 66, 55, 77, 34, 9, 55, 1];
+        let newarr=[];
+        function doubleValues(arr) {
+            arr.forEach(element => {
+                newarr.push (element*2); 
+            });
+            return newarr;
+        }
+        document.getElementById("demo").innerHTML = "The doubleValues of array : " + doubleValues(arr);
+    </script>
+
+</body>
+
+</html>

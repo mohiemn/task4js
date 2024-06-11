@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q27</title>
+</head>
+
+<body>
+    <h2>Q27</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = "I Am awesome and so are you";
+        let vowels = ['a', 'e', 'i', 'o', 'u'];
+        let count = {};
+        function vowelCountfun(arr) {
+            arr.toLowerCase().split('').forEach(char => {
+                if (vowels.includes(char)) {
+                    if (count[char]) {
+                        count[char]++;
+                    } else {
+                        count[char] = 1;
+                    }
+                }
+            });
+            return count;
+        }
+        document.getElementById("demo").innerHTML = "The vowelCountfun of array : " + vowelCountfun(arr);
+    </script>
+
+</body>
+
+</html>

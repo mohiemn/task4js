@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q12</title>
+</head>
+
+<body>
+    <h2>Q12</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        let value = prompt("Enter your value : ");
+        function addToEnd(arr , value) {
+            arr.push(value);
+            return arr;
+        }
+        document.getElementById("demo").innerHTML = "The element of array after function : " + addToEnd(arr , value);
+    </script>
+
+</body>
+
+</html>

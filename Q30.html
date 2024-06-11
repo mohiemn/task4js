@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q30</title>
+</head>
+
+<body>
+    <h2>Q30</h2>
+    <p id="demo"></p>
+    <script>
+        let arr = ["john", "JACOB", "jinGleHeimer", "schmidt"];
+        function capitalizeNames(arr) {
+            return arr.map(ele => ele.charAt(0).toUpperCase() + ele.slice(1).toLowerCase());
+        }
+        document.getElementById("demo").innerHTML = "The capitalizeNames of array : " + capitalizeNames(arr);
+    </script>
+
+</body>
+
+</html>
